@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fastapi-pct"
+version = "0.1.0"
+description = ""
+authors = ["Kim <test@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["standard"], version = "^0.115.0"}
+mysql-connector-python = "^9.0.0"
+pytest = "^8.3.3"
+pytest-asyncio = "^0.24.0"
+python-dateutil = "^2.9.0.post0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
