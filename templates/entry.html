@@ -1,0 +1,31 @@
+{%extends 'base.html'%}
+{%block body%}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/do_count'>
+    <table>
+    <p>Use this form to submit a calculation request:</p>
+    <tr>
+        <td>date:</td>
+        <td><input name='date' type='TEXT' width='60'></td>
+    </tr>
+    <tr>
+        <td>periods:</td>
+        <td><input name='periods' type='int' value=''></td>
+    </tr>
+    <tr>
+        <td>amount:</td>
+        <td><input name='amount' type='int' value=''></td>
+    </tr>
+    <tr>
+        <td>rate:</td>
+        <td><input name='rate' type='int' value=''></td>
+    </tr>
+    </table>
+    <p>When you're ready, click this button:</p>
+    <p><input value='Do it!' type='SUBMIT'></p>
+    </form>
+    
+    {% endblock %}
+
